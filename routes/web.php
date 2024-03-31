@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PingController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -20,9 +21,11 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('roles', RoleController::class);
     Route::resource('home', HomeController::class);
+    Route::resource('ping', PingController::class);
     Route::get('profile', [UserController::class, 'profile'])->name('profile');
     Route::post('profile', [UserController::class, 'updateP'])->name('profile.update');
     Route::resource('usuarios', UserController::class);
+    Route::post('/pings/{ping}/ping', [PingController::class, 'ping'])->name('ping');
 });
 
 

@@ -37,6 +37,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
+
     <!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
@@ -102,6 +104,19 @@
                                             </span>
                                         </span>
                                         <span class="menu-title">{{ __('Roles') }}</span>
+                                    </a>
+                                </div>
+                            @endcan
+
+                            @can('ver-ping')
+                                <div class="menu-item">
+                                    <a class="menu-link" href="{{ route('ping.index') }}">
+                                        <span class="menu-icon">
+                                            <span class="svg-icon svg-icon-2">
+                                                <i class="fas fa-signal"></i>
+                                            </span>
+                                        </span>
+                                        <span class="menu-title">{{ __('Lista de pings') }}</span>
                                     </a>
                                 </div>
                             @endcan
