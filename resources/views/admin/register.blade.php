@@ -34,13 +34,13 @@
                             <img alt="Logo" src="assets/media/logos/Logo_BioActiva_1.svg" class="h-60px" />
                         </div>
                         <h1 class="fw-bolder fs-2qx pb-5 pb-md-10" style="color: white;">
-                            {{ __('Welcome to BioActiva') }}</h1>
-                        <p class="fw-bold fs-2" style="color: white;">{{ __('We connect science and business') }}
-                            <br />{{ __('to develop innovation') }}
+                            (EMPRESA)</h1>
+                        <p class="fw-bold fs-2" style="color: white;">(FRASE)
+                            <br />(FRASE2)
                         </p>
                     </div>
                     <div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-200px min-h-lg-350px"
-                        style="background-image: url(assets/media/illustrations/sketchy-1/imgBio.jpeg"></div>
+                        style="background-image: "></div>
                 </div>
             </div>
             <div class="d-flex flex-column flex-lg-row-fluid py-10">

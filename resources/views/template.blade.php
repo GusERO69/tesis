@@ -55,8 +55,7 @@
                 data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_mobile_toggle">
                 <div class="aside-logo flex-column-auto" id="kt_aside_logo" style="background-color: #fff">
                     <a href="/">
-                        <img alt="Logo" src="{{ asset('assets/media/logos/Logo_BioActiva_1.svg') }}"
-                            class="h-30px logo" />
+                        <img alt="Logo" src="{{ asset('') }}" class="h-30px logo" />
                     </a>
                     <div id="kt_aside_toggle" class="btn btn-icon w-auto px-0 btn-active-color-primary aside-toggle"
                         data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body"
@@ -120,62 +119,6 @@
                                     </a>
                                 </div>
                             @endcan
-
-                            {{-- <div class="menu-item">
-                                <a class="menu-link"
-                                    href="{{ route('bioactiva.index', ['language' => app()->getLocale()]) }}">
-                                    <span class="menu-icon">
-                                        <span class="svg-icon svg-icon-2">
-                                            <i class="fa-solid fa-chart-simple"></i>
-                                        </span>
-                                    </span>
-                                    <span class="menu-title">{{ __('BIO') }}</span>
-                                </a>
-                            </div> --}}
-
-                            {{-- @if (auth()->user()->hasRole('Super Admin'))
-                                @can('ver-dashboard')
-                                    <div class="menu-item">
-                                        <a class="menu-link"
-                                            href="{{ route('dashboard', ['language' => app()->getLocale()]) }}">
-                                            <span class="menu-icon">
-                                                <span class="svg-icon svg-icon-2">
-                                                    <i class="fa-solid fa-chart-simple"></i>
-                                                </span>
-                                            </span>
-                                            <span class="menu-title">{{ __('Benefits Dashboard') }}</span>
-                                        </a>
-                                    </div>
-                                @endcan
-
-                                @can('ver-usuario')
-                                    <div class="menu-item">
-                                        <a class="menu-link"
-                                            href="{{ route('usuarios.index', ['language' => app()->getLocale()]) }}">
-                                            <span class="menu-icon">
-                                                <span class="svg-icon svg-icon-2">
-                                                    <i class="fa-regular fa-user"></i>
-                                                </span>
-                                            </span>
-                                            <span class="menu-title">{{ __('Users') }}</span>
-                                        </a>
-                                    </div>
-                                @endcan
-
-                                @can('ver-rol')
-                                    <div class="menu-item">
-                                        <a class="menu-link"
-                                            href="{{ route('roles.index', ['language' => app()->getLocale()]) }}">
-                                            <span class="menu-icon">
-                                                <span class="svg-icon svg-icon-2">
-                                                    <i class="fa-solid fa-users"></i>
-                                                </span>
-                                            </span>
-                                            <span class="menu-title">{{ __('Roles') }}</span>
-                                        </a>
-                                    </div>
-                                @endcan
-                            @endif --}}
                         </div>
                     </div>
                 </div>
@@ -201,8 +144,7 @@
                         </div>
                         <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
                             <a href="../../demo1/dist/index.html" class="d-lg-none">
-                                <img alt="Logo" src="{{ asset('assets/media/logos/BAlogo.svg') }}"
-                                    class="h-30px" />
+                                <img alt="Logo" src="{{ asset('') }}" class="h-30px" />
                             </a>
                         </div>
                         <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
@@ -219,24 +161,6 @@
                             </div>
                             <div class="d-flex align-items-stretch flex-shrink-0">
                                 <div class="d-flex align-items-stretch ms-1 ms-lg-3">
-                                </div>
-                                <div class="d-flex align-items-center ms-1 ms-lg-3">
-                                    @if (Route::currentRouteName() === 'usuarios.edit')
-                                        <a href="{{ route(Route::currentRouteName(), ['language' => 'es', 'usuario' => $user->id]) }}"
-                                            class="nav-link">ES</a>
-                                        <a href="{{ route(Route::currentRouteName(), ['language' => 'en', 'usuario' => $user->id]) }}"
-                                            class="nav-link">EN</a>
-                                    @elseif (Route::currentRouteName() === 'contactos.show')
-                                        <a href="{{ route(Route::currentRouteName(), ['language' => 'es', 'contacto' => $contact->id]) }}"
-                                            class="nav-link">ES</a>
-                                        <a href="{{ route(Route::currentRouteName(), ['language' => 'en', 'contacto' => $contact->id]) }}"
-                                            class="nav-link">EN</a>
-                                    @else
-                                        {{-- <a href="{{ route(Route::currentRouteName(), ['language' => 'es']) }}"
-                                            class="nav-link">ES</a>
-                                        <a href="{{ route(Route::currentRouteName(), ['language' => 'en']) }}"
-                                            class="nav-link">EN</a> --}}
-                                    @endif
                                 </div>
                                 <div class="d-flex align-items-center ms-1 ms-lg-3" id="kt_header_user_menu_toggle">
                                     <div class="cursor-pointer symbol symbol-30px symbol-md-40px"

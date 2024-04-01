@@ -28,17 +28,17 @@
     <div class="d-flex flex-column flex-root">
         <div class="d-flex flex-column flex-lg-row flex-column-fluid">
             <div class="d-flex flex-column flex-lg-row-auto w-xl-600px positon-xl-relative"
-                style="background-image: url('assets/media/illustrations/sketchy-1/imgBio.jpeg');
+                style="background-image: url('');
             background-size: cover;">
                 <div class="d-flex flex-column position-xl-fixed top-0 bottom-0 w-xl-600px scroll-y">
                     <div class="d-flex flex-row-fluid flex-column text-center p-10 pt-lg-20 justify-content-center">
                         <div class="py-9 mb-5">
-                            <img alt="Logo" src="assets/media/logos/Logo_BioActiva_1.svg" class="h-50px" />
+                            <img alt="Logo" src="" class="h-50px" />
                         </div>
-                        <h1 class="fw-bolder fs-2qx pb-5 pb-md-10" style="color: white;">
-                            {{ __('Welcome to BioActiva') }}</h1>
-                        <p class="fw-bold fs-2" style="color: white;">{{ __('We connect science and business') }}
-                            <br />{{ __('to develop innovation') }}
+                        <h1 class="fw-bolder fs-2qx pb-5 pb-md-10" style="color: black;">
+                            (EMPRESA)</h1>
+                        <p class="fw-bold fs-2" style="color: black;">(FRASE 1)
+                            <br />(FRASE 2)
                         </p>
                     </div>
                     {{-- <div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-100px min-h-lg-350px"
@@ -51,7 +51,7 @@
                         <form method="POST" action="{{ route('login') }}" class="form w-100" novalidate="novalidate">
                             @csrf
                             <div class="text-center mb-10">
-                                <h1 class="text-dark mb-3">{{ __('Welcome to BioActiva') }}</h1>
+                                <h1 class="text-dark mb-3">{{ __('Welcome to Empresa') }}</h1>
                                 <div class="text-gray-400 fw-bold fs-4">{{ __('You are new?') }}
                                     <a href="{{ route('register') }}"
                                         class="link-primary fw-bolder">{{ __('Create an account') }}</a>
@@ -64,8 +64,7 @@
                             </div>
                             <div class="fv-row mb-10">
                                 <div class="d-flex flex-stack mb-2">
-                                    <label
-                                        class="form-label fw-bolder text-dark fs-6 mb-0">{{ __('Password') }}</label>
+                                    <label class="form-label fw-bolder text-dark fs-6 mb-0">{{ __('Password') }}</label>
                                     {{-- <a href="../../demo1/dist/authentication/layouts/aside/password-reset.html" class="link-primary fs-6 fw-bolder">Forgot Password ?</a> --}}
                                 </div>
                                 <input class="form-control form-control-lg form-control-solid" type="password"

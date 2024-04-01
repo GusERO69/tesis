@@ -41,5 +41,5 @@ Route::post('/login', [LoginController::class, 'login'])->name('login');
 
 
 Route::get('/', function () {
-    return view('template');
+    return redirect(route('login'));
 });
